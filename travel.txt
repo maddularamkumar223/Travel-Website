@@ -1,0 +1,17 @@
+Pages
+
+1. Login Page
+2. SignUp page
+3. Home page
+4. Add Travel Package Page
+5. Display Orders page
+
+
+Features
+
+1. User Will Register
+2. Auth
+3. Notifications
+4. Search
+5. logout
+6. Role based data
