@@ -1,0 +1,39 @@
+#displayPackages {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#packageContainer {
+  height: 400px;
+  width: 400px;
+  border: solid gray;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 20px;
+  figure {
+    height: 50%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  p,
+  button {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+}

@@ -16,7 +16,7 @@ let navigationData = [
   },
   {
     name: "Add Package",
-    href: "#",
+    href: "../addPackage/addPackage.html",
     id: "addPackage",
   },
   {
@@ -45,7 +45,7 @@ let profileData = [
 ];
 let createNavbar = (navbarData) => {
   let container = document.createElement("article");
-  let ul = document.createElement("ul");   
+  let ul = document.createElement("ul");     
   navbarData.map((value) => {
     let li = document.createElement("li");
     let a = document.createElement("a");

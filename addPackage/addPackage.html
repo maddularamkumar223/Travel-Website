@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <style>
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav id="nav_container"></nav>
+
+      <section>
+        <form action="">
+          <article>
+            <label for="">Destination Name</label>
+            <input
+              type="text"
+              name="destination"
+              placeholder="Enter Your Destination Place"
+            />
+          </article>
+          <article>
+            <label for="">Days</label>
+            <input type="text" name="days" placeholder="Enter The Days" />
+          </article>
+          <article>
+            <label for="">Price</label>
+            <input
+              type="number"
+              name="price"
+              placeholder="Enter the trip price"
+            />
+          </article>
+          <article>
+            <label for="">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Enter Your Description"
+            ></textarea>
+          </article>
+
+          <article>
+            <label for="">Image</label>
+            <input type="file" name="image" />
+          </article>
+          <article>
+            <button>Submit</button>
+          </article>
+        </form>
+      </section>
+    </main>
+    <script src="./addPackage.js"></script>
+    <script src="../navbar/navbar.js"></script>
+    Add PAckage
+  </body>
+</html>
