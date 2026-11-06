@@ -8,11 +8,58 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(135deg, #e0f2fe, #ffffff, #fff7ed);
 }
 
 #registerImage,
 #form_data {
-  border: solid;
+  /* border: solid; */
   display: grid;
   place-items: center;
+}
+
+#registerImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+form {
+  border: solid;
+  height: 90%;
+  width: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+form article {
+  width: 100%;
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  input,
+  button {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 0;
+  }
+
+  input {
+    padding-left: 20px;
+  }
+
+  button {
+    background-image: linear-gradient(135deg, #0284c7, #06b6d4);
+    color: white;
+  }
 }

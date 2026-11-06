@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="./addpackage.css" />
     <style>
       section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        height: 90%;
+        padding: 10px;
       }
     </style>
   </head>
   <body>
     <main>
       <nav id="nav_container"></nav>
-
       <section>
-        <form action="">
+        <article id="registerImage" style="height: 100%;">
+          <img src="../assets/addPackage.png" alt="add Package" />
+        </article>
+        <form action="" id="form_data">
+          <article style="text-align: center">
+            <h1>Add Packages Here</h1>
+          </article>
           <article>
             <label for="">Destination Name</label>
             <input
@@ -61,6 +68,5 @@
     </main>
     <script src="./addPackage.js"></script>
     <script src="../navbar/navbar.js"></script>
-    Add PAckage
   </body>
 </html>

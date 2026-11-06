@@ -21,12 +21,12 @@ let navigationData = [
   },
   {
     name: "Trip Packages",
-    href: "#",
+    href: "../tripPackages/tripPackage.html",
     id: "tripPackages",
   },
   {
     name: "Booked Packages",
-    href: "#",
+    href: "../bookedPackages/bookedPackages.html",
     id: "bookedPackages",
   },
 ];
@@ -45,7 +45,7 @@ let profileData = [
 ];
 let createNavbar = (navbarData) => {
   let container = document.createElement("article");
-  let ul = document.createElement("ul");     
+  let ul = document.createElement("ul");
   navbarData.map((value) => {
     let li = document.createElement("li");
     let a = document.createElement("a");
@@ -70,3 +70,13 @@ let createNavbar = (navbarData) => {
 createNavbar(logo);
 createNavbar(navigationData);
 createNavbar(profileData);
+
+let role = localStorage.getItem("role");
+console.log(role);
+
+let addPackageComponent = document.getElementById("addPackage");
+addPackageComponent.style.display = "none";
+console.log(addPackageComponent);
+if (role === "admin") {
+  addPackageComponent.style.display = "block";
+}

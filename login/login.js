@@ -26,6 +26,11 @@ let validation = async (data) => {
     if (findSingleUser !== undefined) {
       console.log(findSingleUser);
       alert("Login Successful");
+      localStorage.setItem("id", findSingleUser.id);
+      localStorage.setItem("role", findSingleUser.role);
+      location.href = "../homepage/index.html";
+      // sessionStorage.setItem("id", findSingleUser.id);
+      // sessionStorage.setItem("role", findSingleUser.role);
     } else {
       alert("User Not Found");
     }
