@@ -39,7 +39,7 @@ let profileData = [
   },
   {
     name: "Profile",
-    href: "#",
+    href: "../profile/profile.html",
     id: "profile",
   },
 ];

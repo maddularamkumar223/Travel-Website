@@ -1,0 +1,31 @@
+main {
+  background-image: linear-gradient(135deg, #0f172a, #164e63);
+  height: 100vh;
+  color: white;
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    article{
+        border: solid;
+        border-radius: 20px;
+        padding: 20px;
+        height: 50%;
+        width: 50%;
+        font-size: 32px;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        button{
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 32px;
+            background-color: red;
+            color: white;
+        }
+    }
+}
